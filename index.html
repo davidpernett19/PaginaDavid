@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografia CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menu Hamburguesa -->
+<div class="menu-hamburguesa">
+    <!-- Icono de 3 líneas -->
+    <div class="hamburguesa-icono" id="hamburguesa">
+        <div class="linea"></div>
+        <div class="linea"></div>
+        <div class="linea"></div>
+    </div>
+    <!-- aca van los enlaces -->
+    <nav class="menu-lateral" id="menuLateral">
+        <ul>
+            <li><a href="#que-es-css">¿Qué es CSS?</a></li>
+            <li><a href="#ventajas-css">Ventajas CSS</a></li>
+            <li><a href="#ejemplos-css">Ejemplos CSS</a></li>
+            <li><a href="#que-es-js">¿Qué es JS?</a></li>
+            <li><a href="#ventajas-js">Ventajas JS</a></li>
+            <li><a href="#ejemplos-js">Ejemplos JS</a></li>
+            <li><a href="#atributos_css">Tabla CSS</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <header>
+        <h1>Desarrollo Web: CSS</h1>
+    </header>
+
+    <main>
+        <!--Seccion 1 que es CCS?-->
+        <section id="que-es-css">
+            <h2>¿Que es CSS?</h2>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de estilos que define cómo se ven los elementos HTML 
+                en una página web. Controla colores, fuentes, márgenes, diseños y más.</p>
+                
+                <p>CSS fue desarrollado por W3C (World Wide Web Consortium) en 1996 por una razón muy sencilla. HTML no fue diseñado para tener etiquetas 
+                    que ayuden a formatear la página. Está hecho solo para escribir el marcado para el sitio.</p>
+                <p class="destacado">CSS es esencial para crear diseños atractivos y responsive.</p>
+                <p>CSS utiliza una sintaxis simple basada en el inglés con un conjunto de reglas que la gobiernan. Como mencionamos anteriormente, HTML no fue hecho con la intención de utilizar elementos de estilo, 
+                    sino solo para el marcado de la página. Fue creado simplemente para describir el contenido. Por ejemplo: &lt;p&gt;Esto es un párrafo&lt;/p&gt;.</p>
+                    <p id="parrafo-corte">Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos. 
+                        Una declaración CSS siempre termina con un punto y coma, y ​​los bloques de declaración están rodeados por llaves.</p>
+                <a href="https://www.ionos.com/es-us/digitalguide/paginas-web/diseno-web/que-es-css/" title="Visitar pagina web con mas detalles" target="_blank"><img id="imagen-scc" src="imagenes/icons8-css3-100.png" alt="imagen css" loading="lazy"
+                    style="max-width: 100%; height: auto;"></a>
+
+                    <!-- Sección 2: Ventajas de CSS -->
+        <section id="ventajas-css" class="seccion">
+            <h2>Ventajas de CSS</h2>
+            <div class="grid-ventajas">
+                <div class="ventaja">
+                    <h3>Separación de contenido y diseño</h3>
+                    <p>Permite modificar el estilo sin alterar el HTML.</p>
+                </div>
+                <div class="ventaja">
+                    <h3>Responsive Design</h3>
+                    <p>Adapta la página a cualquier dispositivo con Media Queries.</p>
+                </div>
+                <div class="ventaja">
+                    <h3>Reutilización de código</h3>
+                    <p>Usa clases para aplicar estilos consistentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Ejemplos de CSS -->
+        <section id="ejemplos-css" class="seccion">
+            <h2>Ejemplos Prácticos</h2>
+            <div class="ejemplos-container">
+                <div class="ejemplo">
+                    <h3>Botón Moderno</h3>
+                    <button class="boton-ejemplo">Haz clic</button>
+                    <p class="codigo">.boton { background: #4CAF50; }</p>
+                </div>
+                <div class="ejemplo">
+                    <h3>Flexbox</h3>
+                    <div class="container-flex">
+                        <div class="item-flex">1</div>
+                        <div class="item-flex">2</div>
+                        <div class="item-flex">3</div>
+                    </div>
+                    <p class="codigo">display: flex;</p>
+                </div>
+            </div>
+        </section>
+        </section>
+        <!-- Sección 4: ¿Qué es JavaScript? -->
+<section id="que-es-js" class="seccion">
+    <h2>¿Qué es JavaScript?</h2>
+    <p>JavaScript es un lenguaje de programación que permite agregar interactividad a tu página web (ej: animaciones, formularios dinámicos, actualizaciones sin recargar).</p>
+    <p>Cada vez que una página web hace algo más que sentarse allí y mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., puedes apostar que probablemente JavaScript está involucrado. 
+        Es la tercera capa del pastel de las tecnologías web estándar, dos de las cuales (HTML y CSS) hemos cubierto con mucho más detalle en otras partes del Área de aprendizaje.</p>
+
+        <a href="https://developer.mozilla.org/es/docs/Learn_web_development/Core/Scripting/What_is_JavaScript" title="Click para mas info" target="_blank"><img id="JS-imagen" src="imagenes/javascript.png" alt="imagen css" loading="lazy"
+            style="max-width: 100%; height: auto;"></a>
+
+    </section>
+
+
+
+<!-- Sección 5: Ventajas de JavaScript -->
+<section id="ventajas-js" class="seccion">
+    <h2>Ventajas de JavaScript</h2>
+    <div class="grid-ventajas">
+        <div class="ventaja">
+            <h3>Interactividad</h3>
+            <p>Respuesta a clicks, teclas, y eventos del usuario.</p>
+        </div>
+        <div class="ventaja">
+            <h3>Asincronía</h3>
+            <p>Puede cargar datos sin recargar la página (APIs).</p>
+        </div>
+        <div class="ventaja">
+            <h3>Compatibilidad</h3>
+            <p>Funciona en todos los navegadores modernos.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 6: Ejemplos de JavaScript -->
+<section id="ejemplos-js" class="seccion">
+    <h2>Ejemplos Prácticos</h2>
+    <div class="ejemplos-container">
+        <div class="ejemplo">
+            <h3>Contador Interactivo</h3>
+            <div class="contador">
+                <button id="decrementar">-</button>
+                <span id="valor">0</span>
+                <button id="incrementar">+</button>
+            </div>
+            <p class="codigo">document.getElementById()</p>
+        </div>
+        <div class="ejemplo">
+            <h3>Cambio de Color</h3>
+            <button id="cambiar-color" class="boton-ejemplo">Click aquí</button>
+            <p class="codigo">element.style.backgroundColor</p>
+        </div>
+    </div>
+</section>
+    </main>
+
+    
+    <script>
+        const hamburguesa = document.getElementById('hamburguesa');
+        const menuLateral = document.getElementById('menuLateral');
+    
+        hamburguesa.addEventListener('click', () => {
+            // Alternar clases para mostrar/ocultar menú y animar icono
+            menuLateral.classList.toggle('mostrar');
+            hamburguesa.classList.toggle('activo');
+        });
+    
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.menu-lateral a').forEach(enlace => {
+            enlace.addEventListener('click', () => {
+                menuLateral.classList.remove('mostrar');
+                hamburguesa.classList.remove('activo');
+            });
+        });
+    </script>
+
+<section id="atributos_css">
+    <h1>Tabla de atributos CSS</h1>
+    <div id="tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del atributo</th>
+                    <th>Descripción</th>
+                    <th>Valores posibles</th>
+                    <th>Ejemplos de uso</th>
+                    <th>Imagen representativa</th>
+                    <th>Fuente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Font-Size</td> 
+                <td>El atributo font-size define el tamaño de la fuente (texto) de un elemento HTML. Controla qué tan grande o pequeño se muestra el texto.</td>
+                <td>Unidades absolutas: px (píxeles), pt (puntos), cm (centímetros), etc.
+    
+                    Unidades relativas: em, rem, % (porcentaje).
+                    
+                    Palabras clave: small, medium, large, x-large, etc.</td>
+                <td>p {
+                    font-size: 16px; }
+                  h1 {
+                    font-size: 2em;}</td>
+                <td ><center><img src="imagenes/fontzise.png" alt="Ejemplo font-size"></td></center>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/font-size">Fuente</a></td>
+            </tr>
+            <tr> <!--border-radius-->
+                <td>border-radius</td>
+                <td>El atributo border-radius redondea las esquinas de un elemento. Puedes aplicarlo a cualquier elemento con bordes, como cajas, botones o imágenes.</td>
+                <td>Un valor: 10px (todas las esquinas iguales).
+    
+                    Dos valores: 10px 20px (esquina superior izquierda e inferior derecha, y esquina superior derecha e inferior izquierda).
+                    
+                    Cuatro valores: 10px 20px 30px 40px (cada esquina con un radio diferente).
+                    
+                    Porcentaje: 50% (para crear círculos o elipses).</td>
+                <td>img {
+                    border-radius: 50%;}</td>  <!--Genera una imagen circular-->
+                <td><center><img src="imagenes/border-radius.png" alt="Ejemplo border-radius"></td></center>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/border-radius">Fuente</a></td>
+            </tr>
+    
+            <tr>
+                <td>display</td>
+                <td>El atributo display controla cómo se muestra un elemento en la página. Define si un elemento es un bloque, en línea, o utiliza un modelo de diseño como flexbox o grid.</td>
+                <td>block: El elemento ocupa todo el ancho disponible.
+    
+                    inline: El elemento ocupa solo el espacio necesario.
+                    
+                    inline-block: Combina características de bloque y en línea.
+                    
+                    none: Oculta el elemento.
+                    
+                    flex: Activa el modelo de diseño flexbox.
+                    
+                    grid: Activa el modelo de diseño grid.</td>
+                <td> .container {
+                    display: flex; }</td>
+                <td><center><img src="imagenes/display.png" alt="Ejemplo Display"></td></center>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/display">Fuente</a></td>
+            </tr>
+            <tr>
+                <td>flexbox</td>
+                <td>Flexbox es un modelo de diseño que permite organizar elementos de manera flexible dentro de un contenedor. Se activa con display: flex y permite controlar la alineación, dirección y distribución de los elementos hijos.</td>
+                <td>flex-direction: Define la dirección de los elementos (fila o columna).
+
+                    justify-content: Alinea los elementos en el eje principal.
+                    
+                    align-items: Alinea los elementos en el eje secundario.
+                    
+                    flex-wrap: Controla si los elementos se envuelven en múltiples líneas.</td>
+                <td>.container {
+                    display: flex;
+                    justify-content: center; 
+                    align-items: center; }</td>
+                <td><img src="imagenes/flexbox.png" alt="Flexbox ejemplo"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Fuente</a></td>
+            </tr>
+            <tr>
+                <td>position</td>
+                <td>El atributo position define cómo se posiciona un elemento en la página. Puede ser estático, relativo, absoluto, fijo o "pegajoso".</td>
+                <td>static: Posición normal (por defecto).
+
+                    relative: Posición relativa a su ubicación original.
+                    
+                    absolute: Posición relativa al contenedor más cercano con posición no estática.
+                    
+                    fixed: Posición fija en la ventana del navegador.
+                    
+                    sticky: Combina relative y fixed.</td>
+                <td>div {
+                    position: relative;
+                    top: 20px; 
+                  }
+                  
+                  header {
+                    position: fixed; }</td>
+                <td><img src="imagenes/position.png" alt="Position ejemplo"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/position">Fuente</a></td>
+            </tr>
+
+            <tr>
+                <td>box-shadow</td>
+                <td>El atributo box-shadow agrega sombras a un elemento. Puedes controlar el desplazamiento, el desenfoque, el color y el tamaño de la sombra.</td>
+                <td>h-offset: Desplazamiento horizontal.
+
+                    v-offset: Desplazamiento vertical.
+                    
+                    blur: Desenfoque de la sombra.
+                    
+                    spread: Tamaño de la sombra.
+                    
+                    color: Color de la sombra.</td>
+                <td>div {
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                }</td>
+                <td><img src="imagenes/box-shadow.png" alt="box-shadow"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/box-shadow">Fuente</a></td>
+            </tr>
+
+            <tr>
+                <td>overflow</td>
+                <td>El atributo overflow controla cómo se maneja el contenido que desborda un elemento. Puede ocultarlo, mostrar barras de desplazamiento o permitir que se desborde.</td>
+                <td>visible: Muestra el contenido desbordado.
+
+                    hidden: Oculta el contenido desbordado.
+                    
+                    scroll: Muestra barras de desplazamiento.
+                    
+                    auto: Muestra barras de desplazamiento solo si es necesario.
+                    
+                    </td>
+                <td>div {
+                    overflow: hidden;}</td>
+                <td><img src="imagenes/overflow.png" alt="overflow"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/overflow">Fuente</a></td>
+            </tr>
+            <tr>
+                <td>z-index</td>
+                <td>El atributo z-index controla el orden de apilamiento de los elementos superpuestos. Un valor mayor coloca el elemento por encima de otros con valores menores.</td>
+                <td>Números enteros: 1, 2, -1, etc</td>
+                <td>div {
+                    position: absolute;
+                    z-index: 1;
+                  }</td>
+                <td><img src="imagenes/z-index.png" alt="z-index"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/z-index">Fuente</a></td>
+            </tr>
+
+            <tr>
+                <td>opacity</td>
+                <td>El atributo opacity controla la transparencia de un elemento. Un valor de 1 es completamente opaco, y 0 es completamente transparente.</td>
+                <td>Números entre 0 y 1: 0.5, 0.75, etc.</td>
+                <td>img {
+                    opacity: 0.5; 
+                  }</td>
+                <td><img src="imagenes/Opacity.png" alt="Opacity"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/opacity">Fuente</a></td>
+            </tr>
+
+            <tr>
+                <td>margin y padding</td>
+                <td>margin: Define el espacio exterior alrededor de un elemento. padding: Define el espacio interior entre el contenido y el borde de un elemento</td>
+                <td>Unidades: px, em, %, etc.
+
+                    Valores individuales: margin: 10px; (igual en todos los lados).
+                    
+                    Valores múltiples: margin: 10px 20px; (arriba/abajo y izquierda/derecha).</td>
+                <td>div {
+                    margin: 20px; 
+                    padding: 10px; 
+                  }</td>
+                <td><img src="imagenes/paddingvsmargin.png" alt="padding vs margin"></td>
+                <td><a href="#https://developer.mozilla.org/es/docs/Web/CSS/margin">Fuente</a></td>
+            </tr>
+    
+        </table>
+    </div>
+</section>
+<br>
+<footer>Pagina creada por David L. Pernett</footer> 
+
+</body>
+</html>
